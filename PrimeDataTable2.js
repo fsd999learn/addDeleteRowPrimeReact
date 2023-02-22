@@ -20,8 +20,6 @@ export default function PrimeDataTable({ data, rawData, setRawData, primaryButto
     const [deleteDialog, setDeleteDialog] = useState(false);
     const [visible, setVisible] = useState(false);
     const [addNewRow, setAddNewRow] = useState(false);
-    // const [selectedOptions, setSelectedOptions] = useState(null);   //for multiselect
-
     const toast = useRef(null);
     const dt = useRef(null);
 
@@ -134,11 +132,8 @@ export default function PrimeDataTable({ data, rawData, setRawData, primaryButto
 
     const deleteSelected = () => {
         let selectedID = [];
-
         selected.forEach(s => selectedID.push(s[columns[0]]));
-
         let _data = rawData.filter(val => !selectedID.includes(val[columns[0].replaceAll(" ", "").toLowerCase()]));
-
         setRawData(_data);
         setDeleteDialog(false);
         setSelected(null);
@@ -154,33 +149,12 @@ export default function PrimeDataTable({ data, rawData, setRawData, primaryButto
     );
     //end of deleting
 
-    //for multiselect
-    // const renderMultiSelect = () => {
-    //     return (
-    //         <span className="p-float-label">
-    //             <MultiSelect inputId="multiselect" value={selectedOptions} options={multiSelectOptions} onChange={(e) => multiSelectOnChange(e.value)} optionLabel="label" maxSelectedLabels={3} display='chip' filter />
-
-    //             <label htmlFor="multiselect">{multiSelectLabel}</label>
-    //         </span>
-    //     );
-    // }
-
-    // const multiSelectOnChange = (values) => {
-    //     setSelectedOptions(values);
-
-    //     handleMultiSelect(values);
-    // }
-    //end of multiselect
-
     const addRow = () => {
         let _data = [...localData]
 
         _data.unshift(emptyData);
 
         setLocalData(_data);
-
-        // rawData.unshift(rawEmptyData);
-
         // setRawData(rawData);
         setVisible(true);
         setAddNewRow(true);
