@@ -1,0 +1,624 @@
+[
+    {
+        "id": 1,
+        "serviceid": "HR1",
+        "servicename": "Dummy Service 1",
+        "projectname": "HR Analytics",
+        "filename": "fielddata1.xlsx",
+        "sheetname": "sheet1",
+        "frequency": "Daily",
+        "creator": "Admin1",
+        "createdatetime": "2022/11/29 16:01",
+        "status": "Draft",
+        "fields": [
+            {
+                "fieldId": 1,
+                "fieldname": "Employee Name",
+                "datatype": "String",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 2,
+                "fieldname": "Employee ID",
+                "datatype": "Number",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 3,
+                "fieldname": "Date of Birth",
+                "datatype": "date",
+                "format": "YYYY/MM/DD",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 4,
+                "fieldname": "Address",
+                "datatype": "String",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 5,
+                "fieldname": "Postal Code",
+                "datatype": "Number",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "serviceid": "BD2",
+        "servicename": "Dummy Service 2",
+        "projectname": "BD CE Analytics",
+        "filename": "fielddata2.xlsx",
+        "sheetname": "sheet2",
+        "frequency": "Weekly",
+        "creator": "Admin2",
+        "createdatetime": "2022/11/29 16:01",
+        "status": "Draft",
+        "fields": [
+            {
+                "fieldId": 1,
+                "fieldname": "Employee Name",
+                "datatype": "String",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 2,
+                "fieldname": "Employee ID",
+                "datatype": "Number",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 3,
+                "fieldname": "Date of Birth",
+                "datatype": "date",
+                "format": "YYYY/MM/DD",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 4,
+                "fieldname": "Address",
+                "datatype": "String",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "serviceid": "CM3",
+        "servicename": "Dummy Service 3",
+        "projectname": "Crisis Management Dashboard",
+        "filename": "fielddata3.xlsx",
+        "sheetname": "sheet3",
+        "frequency": "Monthly",
+        "creator": "Admin3",
+        "createdatetime": "2022/11/29 16:01",
+        "status": "Pending approval",
+        "fields": [
+            {
+                "fieldId": 1,
+                "fieldname": "Employee Name",
+                "datatype": "String",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 2,
+                "fieldname": "Employee ID",
+                "datatype": "Number",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 3,
+                "fieldname": "Date of Birth",
+                "datatype": "date",
+                "format": "YYYY/MM/DD",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 4,
+                "fieldname": "Address",
+                "datatype": "String",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 5,
+                "fieldname": "Postal Code",
+                "datatype": "Number",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 6,
+                "fieldname": "Band",
+                "datatype": "Number",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "serviceid": "BR4",
+        "servicename": "Dummy Service 4",
+        "projectname": "Board Risk Appetite Metrics",
+        "filename": "fielddata4.xlsx",
+        "sheetname": "sheet4",
+        "frequency": "Annually",
+        "creator": "Admin4",
+        "createdatetime": "2022/11/29 16:01",
+        "status": "Pending approval",
+        "fields": [
+            {
+                "fieldId": 1,
+                "fieldname": "Employee Name",
+                "datatype": "String",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 2,
+                "fieldname": "Employee ID",
+                "datatype": "Number",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 3,
+                "fieldname": "Date of Birth",
+                "datatype": "date",
+                "format": "YYYY/MM/DD",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "serviceid": "FS5",
+        "servicename": "Dummy Service 5",
+        "projectname": "Future Service Catalog",
+        "filename": "fielddata5.xlsx",
+        "sheetname": "sheet5",
+        "frequency": "Biannually",
+        "creator": "Admin5",
+        "createdatetime": "2022/11/29 16:01",
+        "status": "Pending approval",
+        "fields": [
+            {
+                "fieldId": 1,
+                "fieldname": "Employee Name",
+                "datatype": "String",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 2,
+                "fieldname": "Employee ID",
+                "datatype": "Number",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 3,
+                "fieldname": "Date of Birth",
+                "datatype": "date",
+                "format": "YYYY/MM/DD",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 4,
+                "fieldname": "Address",
+                "datatype": "String",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 5,
+                "fieldname": "Postal Code",
+                "datatype": "Number",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "serviceid": "EP6",
+        "servicename": "Dummy Service 6",
+        "projectname": "eProduct2.0",
+        "filename": "fielddata6.xlsx",
+        "sheetname": "sheet6",
+        "frequency": "Daily",
+        "creator": "Admin6",
+        "createdatetime": "2022/11/29 16:01",
+        "status": "Pending approval",
+        "fields": [
+            {
+                "fieldId": 1,
+                "fieldname": "Employee Name",
+                "datatype": "String",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 2,
+                "fieldname": "Employee ID",
+                "datatype": "Number",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 3,
+                "fieldname": "Date of Birth",
+                "datatype": "date",
+                "format": "YYYY/MM/DD",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 4,
+                "fieldname": "Address",
+                "datatype": "String",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "serviceid": "RI7",
+        "servicename": "Dummy Service 7",
+        "projectname": "Resilience Intelligence Engine",
+        "filename": "fielddata7.xlsx",
+        "sheetname": "sheet7",
+        "frequency": "Annually",
+        "creator": "Admin7",
+        "createdatetime": "2022/11/29 16:01",
+        "status": "Pending approval",
+        "fields": [
+            {
+                "fieldId": 1,
+                "fieldname": "Employee Name",
+                "datatype": "String",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 2,
+                "fieldname": "Employee ID",
+                "datatype": "Number",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 3,
+                "fieldname": "Date of Birth",
+                "datatype": "date",
+                "format": "YYYY/MM/DD",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 4,
+                "fieldname": "Address",
+                "datatype": "String",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "serviceid": "BD8",
+        "servicename": "Dummy Service 8",
+        "projectname": "BD CE Analytics",
+        "filename": "fielddata8.xlsx",
+        "sheetname": "sheet8",
+        "frequency": "Biannually",
+        "creator": "Admin8",
+        "createdatetime": "2022/11/29 16:01",
+        "status": "Pending approval",
+        "fields": [
+            {
+                "fieldId": 1,
+                "fieldname": "Employee Name",
+                "datatype": "String",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 2,
+                "fieldname": "Employee ID",
+                "datatype": "Number",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 3,
+                "fieldname": "Date of Birth",
+                "datatype": "date",
+                "format": "YYYY/MM/DD",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 4,
+                "fieldname": "Address",
+                "datatype": "String",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 5,
+                "fieldname": "Postal Code",
+                "datatype": "Number",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 6,
+                "fieldname": "Band",
+                "datatype": "Number",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "serviceid": "HR9",
+        "servicename": "Dummy Service 9",
+        "projectname": "HR Analytics",
+        "filename": "fielddata9.xlsx",
+        "sheetname": "sheet9",
+        "frequency": "Daily",
+        "creator": "Admin9",
+        "createdatetime": "2022/12/07 11:40",
+        "status": "Pending approval",
+        "fields": [
+            {
+                "fieldId": 1,
+                "fieldname": "Employee Name",
+                "datatype": "String",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 2,
+                "fieldname": "Employee ID",
+                "datatype": "Number",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 3,
+                "fieldname": "Date of Birth",
+                "datatype": "date",
+                "format": "YYYY/MM/DD",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 4,
+                "fieldname": "Address",
+                "datatype": "String",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 5,
+                "fieldname": "Postal Code",
+                "datatype": "Number",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "serviceid": "BD10",
+        "servicename": "Dummy Service 10",
+        "projectname": "BD CE Analytics",
+        "filename": "fielddata10.xlsx",
+        "sheetname": "sheet10",
+        "frequency": "Weekly",
+        "creator": "Admin10",
+        "createdatetime": "2022/12/07 11:41",
+        "status": "Pending approval",
+        "fields": [
+            {
+                "fieldId": 1,
+                "fieldname": "Employee Name",
+                "datatype": "String",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 2,
+                "fieldname": "Employee ID",
+                "datatype": "Number",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 3,
+                "fieldname": "Date of Birth",
+                "datatype": "date",
+                "format": "YYYY/MM/DD",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 4,
+                "fieldname": "Address",
+                "datatype": "String",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "serviceid": "CM11",
+        "servicename": "Dummy Service 11",
+        "projectname": "Crisis Management Dashboard",
+        "filename": "fielddata11.xlsx",
+        "sheetname": "sheet11",
+        "frequency": "Monthly",
+        "creator": "Admin11",
+        "createdatetime": "2022/12/07 11:42",
+        "status": "Pending approval",
+        "fields": [
+            {
+                "fieldId": 1,
+                "fieldname": "Employee Name",
+                "datatype": "String",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 2,
+                "fieldname": "Employee ID",
+                "datatype": "Number",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 3,
+                "fieldname": "Date of Birth",
+                "datatype": "date",
+                "format": "YYYY/MM/DD",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 4,
+                "fieldname": "Address",
+                "datatype": "String",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 5,
+                "fieldname": "Postal Code",
+                "datatype": "Number",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 6,
+                "fieldname": "Band",
+                "datatype": "Number",
+                "format": "-",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            }
+        ]
+    }
+]
