@@ -1,1 +1,1 @@
-Giving you a json file. Populate 2nd dropdown based on selection from 1st dropdown in React.Js
+Giving you a json file. Populate 2nd dropdown ("servicename") based on selection from 1st dropdown ("projectname") in React.Js
