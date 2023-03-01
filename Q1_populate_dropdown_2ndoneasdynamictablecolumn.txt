@@ -1,3 +1,5 @@
+Next in this table, create table header for Checker, Maker and Self-Checker. In their columns, create a primereact radio button. Only one radio button can be selected for each row. Value is captured onSubmit form. 
+
 Change the 2nd dropdown as a dynamically generated column values for a table with servicename as the table header. 
 
 Giving you a json file. Populate 2nd dropdown ("servicename") based on selection from 1st dropdown ("projectname") in React.Js
