@@ -1,0 +1,40 @@
+import React, { useState } from 'react';
+import { Dropdown } from 'primereact/dropdown';
+
+function Dropdowns({ data }) {
+  const [project, setProject] = useState(null);
+  const [services, setServices] = useState([]);
+
+  const handleProjectChange = (e) => {
+    const selectedProject = e.value;
+    setProject(selectedProject);
+
+    const filteredServices = data.filter((item) => item.projectname === selectedProject);
+    setServices(filteredServices);
+  };
+
+  return (
+    <div>
+      <label htmlFor="project">Select Project:</label>
+      <Dropdown
+        id="project"
+        value={project}
+        options={data.map((item) => ({ label: item.projectname, value: item.projectname }))}
+        onChange={handleProjectChange}
+        placeholder="Select Project"
+        optionLabel="label"
+      />
+
+      <label htmlFor="service">Select Service:</label>
+      <Dropdown
+        id="service"
+        value={services.length > 0 ? services[0].servicename : null}
+        options={services.map((item) => ({ label: item.servicename, value: item.servicename }))}
+        placeholder="Select Service"
+        optionLabel="label"
+      />
+    </div>
+  );
+}
+
+export default Dropdowns;
