@@ -1,1 +1,3 @@
 Giving you a json file. Populate 2nd dropdown ("servicename") based on selection from 1st dropdown ("projectname") in React.Js
+
+From an array  of object json file. Populate 2nd dropdown ("servicename") based on selection from 1st dropdown ("projectname") in functional React.Js. projectname and servicename are same level.
