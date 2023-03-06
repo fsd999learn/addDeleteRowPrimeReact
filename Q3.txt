@@ -1,0 +1,1 @@
+For tabOptions when 'In Progress' is clicked, data will be filtered to return filteredList that match 'Pending approval' or 'Validation is in progress'. 
