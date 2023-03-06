@@ -1,0 +1,22 @@
+useEffect(() => {
+  if (filteredData) {
+    setLocalData(filteredData);
+  } else {
+    if (tabOptions) {
+      let key = Object.keys(tabOptions);
+      let filteredList = data.filter((d) => {
+        if (tabOptions[key][0] === 'In Progress') {
+          return (
+            d[key[0]] === 'Pending approval' ||
+            d[key[0]] === 'Validation is in progress'
+          );
+        } else {
+          return d[key[0]] === tabOptions[key][0];
+        }
+      });
+      setLocalData(filteredList);
+    } else {
+      setLocalData(data);
+    }
+  }
+}, [data, filteredData]);
