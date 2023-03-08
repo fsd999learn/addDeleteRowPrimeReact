@@ -50,6 +50,50 @@ const tabOptions = {
   }
 }, [data, filteredData, selectedTab, tabOptions]);
 
+const handleFilter = (option, field) => {
+        let filteredList = [];
+
+        const filter = { ...selectedFilter };
+
+        filter[field] = option;
+
+        setSelectedFilter(filter);
+
+        filteredList = data.filter(uData => {
+            let matches = 0, noOfFilters = 0;
+
+            for (const [k, value] of Object.entries(filter)) {
+                if (typeof value === 'object') {
+                    if (filter[k].length !== 0) {
+                        noOfFilters++;
+
+                        if (k === primaryMultiSelectLabel.replaceAll(" ", "").toLowerCase()) { setPriMSSelected(true); }
+
+                        for (let obj of filter[k]) {
+                            if (uData[k] === obj) { matches++; }
+                        }
+                    } else {
+                        if (k === primaryMultiSelectLabel.replaceAll(" ", "").toLowerCase()) {
+                            setPriMSSelected(false);
+                            setPriFilteredData(null);
+                        }
+                    }
+                } else {
+                    if (!filter[k].toLowerCase().includes('all')) {
+                        noOfFilters++;
+
+                        if (value.includes(uData[k])) { matches++; }
+                    }
+                }
+            }
+            return noOfFilters === matches;
+        });
+
+        setLocalData(filteredList);
+        setFilteredData(filteredList);
+    }
+
+
 const formatColumn = (rowData) => {
         if (rowData['status'] !== undefined) {
             switch (rowData['status'].toLowerCase()) {
