@@ -1,3 +1,5 @@
+//prime react upload datatable, upload a csv, excel file and have it preview upon loading in primereact datatable format 
+
 import React, { useRef, useState, useEffect } from 'react';
 import { Toast } from 'primereact/toast';
 import { FileUpload } from 'primereact/fileupload';
