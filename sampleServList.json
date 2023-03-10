@@ -1,0 +1,132 @@
+[
+    {
+        "id": 1,
+        "serviceid": "HR1",
+        "requestid": "REQ-34430",
+        "servicename": "Dummy Service 1",
+        "projectname": "HR Analytics",
+        "filename": "fielddata1.xlsx",
+        "sheetname": "sheet1",
+        "frequency": "Daily",
+        "creator": "Admin1",
+        "createdatetime": "2022/11/29 16:01",
+        "status": "Draft",
+        "fields": [
+            {
+                "fieldId": 1,
+                "fieldname": "Employee Name",
+                "definition": "Name of employee",
+                "datatype": "String",
+                "format": "",
+                "mandatory": "Yes",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 2,
+                "fieldname": "Employee ID",
+                "definition": "Bank ID of employee",
+                "datatype": "Number",
+                "format": "",
+                "mandatory": "Yes",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 3,
+                "fieldname": "Date of Birth",
+                "definition": "DOB of employee",
+                "datatype": "date",
+                "format": "YYYY/MM/DD",
+                "mandatory": "No",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 4,
+                "fieldname": "Address",
+                "definition": "Street address of employee",
+                "datatype": "String",
+                "format": "",
+                "mandatory": "No",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 5,
+                "fieldname": "Postal Code",
+                "definition": "Residential postal code",
+                "datatype": "Number",
+                "format": "",
+                "mandatory": "No",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "serviceid": "BD2",
+        "requestid": "REQ-34431",
+        "servicename": "Dummy Service 2",
+        "projectname": "BD CE Analytics",
+        "filename": "fielddata2.xlsx",
+        "sheetname": "sheet2",
+        "frequency": "Weekly",
+        "creator": "Admin2",
+        "createdatetime": "2022/11/29 16:01",
+        "status": "Validation Failed",
+        "remarks": "File has some validation errors.",
+        "fields": [
+            {
+                "fieldId": 1,
+                "fieldname": "Employee Name",
+                "definition": "Name of employee",
+                "datatype": "String",
+                "format": "",
+                "mandatory": "Yes",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 2,
+                "fieldname": "Employee ID",
+                "definition": "Bank ID of employee",
+                "datatype": "Number",
+                "format": "",
+                "mandatory": "Yes",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 3,
+                "fieldname": "Date of Birth",
+                "definition": "DOB of employee",
+                "datatype": "date",
+                "format": "YYYY/MM/DD",
+                "mandatory": "No",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            },
+            {
+                "fieldId": 4,
+                "fieldname": "Address",
+                "definition": "Street address of employee",
+                "datatype": "String",
+                "format": "",
+                "mandatory": "No",
+                "cde": "Yes",
+                "pii": "Yes",
+                "dqreq": "No"
+            }
+        ]
+    }
+]
