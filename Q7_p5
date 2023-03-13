@@ -1,0 +1,168 @@
+import React, { useState } from "react";
+
+import { useForm, Controller } from "react-hook-form";
+
+import { Dropdown } from "primereact/dropdown";
+
+import { Checkbox } from "primereact/checkbox";
+
+import { DataTable } from "primereact/datatable";
+
+import { Column } from "primereact/column";
+
+const Form = ({ serviceList }) => {
+
+  const { control, handleSubmit, getValues } = useForm();
+
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const projects = [...new Set(serviceList.map((item) => item.projectname))];
+
+  const selectedServices = serviceList.filter(
+
+    (item) => item.projectname === selectedProject
+
+  );
+
+  const onSubmit = () => {
+
+    const values = getValues();
+
+    console.log("Selected Services:", values.services);
+
+  };
+
+  return (
+
+    <div>
+
+      <form onSubmit={handleSubmit(onSubmit)}>
+
+        <label htmlFor="project">Project Name:</label>
+
+        <Controller
+
+          name="project"
+
+          control={control}
+
+          defaultValue={selectedProject}
+
+          render={({ field }) => (
+
+            <Dropdown
+
+              {...field}
+
+              id="project"
+
+              options={projects}
+
+              onChange={(event) => {
+
+                field.onChange(event.value);
+
+                setSelectedProject(event.value);
+
+              }}
+
+              placeholder="Select a Project"
+
+              label="Project Name"
+
+            />
+
+          )}
+
+        />
+
+        <DataTable value={selectedServices}>
+
+          <Column field="servicename" header="Service Name" />
+
+          <Column
+
+            field="maker"
+
+            header="Maker"
+
+            body={(rowData) => (
+
+              <Controller
+
+                name={`services[${rowData.id}].maker`}
+
+                control={control}
+
+                render={({ field }) => (
+
+                  <Checkbox
+
+                    {...field}
+
+                    inputId={`maker-${rowData.id}`}
+
+                    checked={field.value}
+
+                  />
+
+                )}
+
+                defaultValue={false}
+
+              />
+
+            )}
+
+          />
+
+          <Column
+
+            field="checker"
+
+            header="Checker"
+
+            body={(rowData) => (
+
+              <Controller
+
+                name={`services[${rowData.id}].checker`}
+
+                control={control}
+
+                render={({ field }) => (
+
+                  <Checkbox
+
+                    {...field}
+
+                    inputId={`checker-${rowData.id}`}
+
+                    checked={field.value}
+
+                  />
+
+                )}
+
+                defaultValue={false}
+
+              />
+
+            )}
+
+          />
+
+        </DataTable>
+
+        <button type="submit">Submit</button>
+
+      </form>
+
+    </div>
+
+  );
+
+};
+
+export default Form;
+
